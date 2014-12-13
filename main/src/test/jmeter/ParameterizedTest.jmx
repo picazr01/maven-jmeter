@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="2.5" jmeter="2.10 r1533061">
+<jmeterTestPlan version="1.2" properties="2.7" jmeter="2.12 r1636949">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan for MPS Testing" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -147,7 +147,7 @@
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="SelectList" enabled="true">
               <stringProp name="delimiter">,</stringProp>
               <stringProp name="fileEncoding"></stringProp>
-              <stringProp name="filename">../resources/file2.csv</stringProp>
+              <stringProp name="filename">file3.csv</stringProp>
               <boolProp name="quotedData">false</boolProp>
               <boolProp name="recycle">true</boolProp>
               <stringProp name="shareMode">shareMode.thread</stringProp>
@@ -216,7 +216,7 @@
             <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="SelectList" enabled="true">
               <stringProp name="delimiter">,</stringProp>
               <stringProp name="fileEncoding"></stringProp>
-              <stringProp name="filename">../resources/file2.csv</stringProp>
+              <stringProp name="filename">file3.csv</stringProp>
               <boolProp name="quotedData">false</boolProp>
               <boolProp name="recycle">true</boolProp>
               <stringProp name="shareMode">shareMode.thread</stringProp>
@@ -275,6 +275,7 @@
             <assertionsResultsToSave>0</assertionsResultsToSave>
             <bytes>true</bytes>
             <url>true</url>
+            <threadCounts>true</threadCounts>
           </value>
         </objProp>
         <stringProp name="filename"></stringProp>
@@ -282,6 +283,10 @@
         <boolProp name="graph_aggregated">false</boolProp>
         <stringProp name="include_sample_labels"></stringProp>
         <stringProp name="exclude_sample_labels"></stringProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
       </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
       <hashTree/>
       <kg.apc.jmeter.vizualizers.CompositeResultCollector guiclass="kg.apc.jmeter.vizualizers.CompositeGraphGui" testclass="kg.apc.jmeter.vizualizers.CompositeResultCollector" testname="jp@gc - Composite Graph" enabled="false">
@@ -312,6 +317,7 @@
             <assertionsResultsToSave>0</assertionsResultsToSave>
             <bytes>true</bytes>
             <url>true</url>
+            <threadCounts>true</threadCounts>
           </value>
         </objProp>
         <stringProp name="filename"></stringProp>
@@ -329,6 +335,10 @@
             <stringProp name="-1549391110">Overall Response Times</stringProp>
           </collectionProp>
         </collectionProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
       </kg.apc.jmeter.vizualizers.CompositeResultCollector>
       <hashTree/>
       <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.HitsPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Hits per Second" enabled="false">
@@ -359,6 +369,7 @@
             <assertionsResultsToSave>0</assertionsResultsToSave>
             <bytes>true</bytes>
             <url>true</url>
+            <threadCounts>true</threadCounts>
           </value>
         </objProp>
         <stringProp name="filename"></stringProp>
@@ -366,6 +377,10 @@
         <boolProp name="graph_aggregated">false</boolProp>
         <stringProp name="include_sample_labels"></stringProp>
         <stringProp name="exclude_sample_labels"></stringProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
       </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
       <hashTree/>
       <kg.apc.jmeter.reporters.LoadosophiaUploader guiclass="kg.apc.jmeter.reporters.LoadosophiaUploaderGui" testclass="kg.apc.jmeter.reporters.LoadosophiaUploader" testname="jp@gc - Loadosophia.org Uploader" enabled="false">
@@ -396,6 +411,7 @@
             <assertionsResultsToSave>0</assertionsResultsToSave>
             <bytes>true</bytes>
             <url>true</url>
+            <threadCounts>true</threadCounts>
           </value>
         </objProp>
         <stringProp name="filename"></stringProp>
@@ -435,6 +451,7 @@
             <assertionsResultsToSave>0</assertionsResultsToSave>
             <bytes>true</bytes>
             <url>true</url>
+            <threadCounts>true</threadCounts>
           </value>
         </objProp>
         <stringProp name="filename"></stringProp>
@@ -468,6 +485,7 @@
             <assertionsResultsToSave>0</assertionsResultsToSave>
             <bytes>true</bytes>
             <url>true</url>
+            <threadCounts>true</threadCounts>
           </value>
         </objProp>
         <stringProp name="filename"></stringProp>
